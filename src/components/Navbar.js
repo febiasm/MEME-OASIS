@@ -2,11 +2,11 @@ import React from "react";
 
 function Navbar() {
   return (
-    <body className="bg-brown">
+    <body className="Navbar">
       <nav className="relative px-4 py-4 flex justify-between items-center ">
         <a className="text-3xl font-bold leading-none" href="#">
         <div className="flex items-center">
-  <img className="w-24 h-34 object-cover" src="https://cdn.pixabay.com/photo/2020/10/16/10/01/cupcake-5659069_960_720.png" alt="My Image" />
+  <img className="w-24 h-34 object-cover" src="https://www.pngmart.com/files/21/Comedy-Silhoutte-PNG-File.png" alt="My Image" />
   <div class="wrapper">
   <div class="bg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl"> M e m e  Oasis </div>
   <div class="fg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl"> M e m e  Oasis </div>

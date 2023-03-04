@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
- background-color: #592525;
+ background-color:#5F2828;
 }
 
 * {
@@ -11,9 +11,9 @@ body{
 }
 
 :root {
-  --gold: #ffb338;
-  --light-shadow: #77571d;
-  --dark-shadow: #3e2904;
+  --gold: #ffffff;
+  --light-shadow: #ffffff;
+  --dark-shadow: #fffefd;
 }
 body {
   margin: 0;
@@ -55,3 +55,6 @@ div.fg{
   color: #1e2127;
   transform: scale(1);
 }
+
+/* like button  */
+
