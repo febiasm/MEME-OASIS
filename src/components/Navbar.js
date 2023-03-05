@@ -10,7 +10,7 @@ function Navbar() {
             <img
               className="w-24 h-34 object-cover"
               src="https://www.pngmart.com/files/21/Comedy-Silhoutte-PNG-File.png"
-              alt="My Image"
+              alt="My "
             />
             <div class="wrapper">
               <div class="bg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl">

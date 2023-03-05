@@ -122,7 +122,7 @@ function Home() {
                   <div class="col-span-1"></div>
                   <div class="wrapper">
                     <div class="w-8 pb-12">
-                      <img src="https://img.icons8.com/ios-filled/256/hashtag.png" />
+                      <img src="https://img.icons8.com/ios-filled/256/hashtag.png" alt ="pic"/>
                     </div>
                   </div>
                   <div class=" pt-2 pl-4 text-lower"> Explore </div>
@@ -138,7 +138,7 @@ function Home() {
                   <div class="col-span-1"></div>
                   <div class="wrapper">
                     <div class="w-8 pb-12">
-                      <img src="https://img.icons8.com/sf-regular/256/settings.png" />
+                      <img src="https://img.icons8.com/sf-regular/256/settings.png" alt ="dd" />
                     </div>
                   </div>
                   <div class=" pt-2 pl-4 text-lower"> settings </div>

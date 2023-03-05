@@ -16,8 +16,8 @@ function Landingpg (){
           GET STARTED
         </Link>
 </div>
-   <div><img src="https://www.pngmart.com/files/11/U-Mad-Bro-Meme-PNG-Transparent-Image.png" alt="Image description"/>
-   <div><img className="elonPng" src="https://www.pngmart.com/files/21/Elon-Musk-Meme-PNG-File.png" alt="Image description"/>
+   <div><img src="https://www.pngmart.com/files/11/U-Mad-Bro-Meme-PNG-Transparent-Image.png" alt=" description"/>
+   <div><img className="elonPng" src="https://www.pngmart.com/files/21/Elon-Musk-Meme-PNG-File.png" alt=" description"/>
 </div>
 </div>
 </div>
