@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 function Landingpg (){
     return (
         <div className="leftColumn grid grid-cols-2 gap-1">
@@ -9,7 +9,12 @@ function Landingpg (){
    Look no further our website is the perfect destination for anyone looking to brighten their day and have a good laugh. Browse through our constantly updated collection,
     share your favorites with friends, and discover new gems that you'll want to come back to again and again. Start exploring now and see what all the hype is about! </div>
 
-    <button className='bg-white text-black py-6 px-8 text-xl'src="#">GET STARTED</button>
+    <Link
+          class="bg-white text-black py-6 px-8 text-xl"
+          to="/home"
+        >
+          GET STARTED
+        </Link>
 </div>
    <div><img src="https://www.pngmart.com/files/11/U-Mad-Bro-Meme-PNG-Transparent-Image.png" alt="Image description"/>
    <div><img className="elonPng" src="https://www.pngmart.com/files/21/Elon-Musk-Meme-PNG-File.png" alt="Image description"/>

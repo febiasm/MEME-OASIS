@@ -1,88 +1,71 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <body className="Navbar">
       <nav className="relative px-4 py-4 flex justify-between items-center ">
-        <a className="text-3xl font-bold leading-none" href="#">
-        <div className="flex items-center">
-  <img className="w-24 h-34 object-cover" src="https://www.pngmart.com/files/21/Comedy-Silhoutte-PNG-File.png" alt="My Image" />
-  <div class="wrapper">
-  <div class="bg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl"> M e m e  Oasis </div>
-  <div class="fg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl"> M e m e  Oasis </div>
-</div>
-</div>
-
-        </a>
+        <Link className="text-3xl font-bold leading-none" to="/">
+          <div className="flex items-center">
+            <img
+              className="w-24 h-34 object-cover"
+              src="https://www.pngmart.com/files/21/Comedy-Silhoutte-PNG-File.png"
+              alt="My Image"
+            />
+            <div class="wrapper">
+              <div class="bg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl">
+                M e m e Oasis
+              </div>
+              <div class="fg hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl">
+                M e m e Oasis
+              </div>
+            </div>
+          </div>
+        </Link>
         <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-			<li><a class="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl" href="#">CONTACT</a></li>
-			<li class="text-gray-300">
+          <li>
+            <Link
+              class="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl"
+              to="/contact"
+            >
+              CONTACT
+            </Link>
+          </li>
+          <li class="text-gray-300"></li>
+          <li>
+            <Link
+              class="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl"
+              to="#"
+            >
+              PRODUCTS
+            </Link>
+          </li>
 
-			</li>
-			<li><a class="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl" href="#">PRODUCTS</a></li>
-
-			<li><a class="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl " href="#">HELP</a></li>
-			<li class="text-gray-300">
-
-			</li>
-		</ul>
-        <a
+          <li>
+            <Link
+              class="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold  transition duration-200   hover:text-black text-2xl "
+              to="#"
+            >
+              HELP
+            </Link>
+          </li>
+          <li class="text-gray-300"></li>
+        </ul>
+        <Link
           class="hidden lg:inline-block lg:ml-auto lg:mr-6 py-4 px-7 text-white font-bold  transition duration-200 hover:bg-white hover:text-black text-2xl"
-          href="#"
+          to="/LoginPage"
         >
           LOG IN
-        </a>
-        <a
+        </Link>
+        <Link
           class="hidden lg:inline-block py-4 px-2 text-white font-bold  transition duration-200   hover:bg-white hover:text-black text-2xl"
-          href="#"
+          to="/signup"
         >
           GET STARTED
-        </a>
+        </Link>
       </nav>
     </body>
-
-    // <script>
-    // // Burger menus
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     // open
-    //     const burger = document.querySelectorAll('.navbar-burger');
-    //     const menu = document.querySelectorAll('.navbar-menu');
-
-    //     if (burger.length && menu.length) {
-    //         for (var i = 0; i < burger.length; i++) {
-    //             burger[i].addEventListener('click', function() {
-    //                 for (var j = 0; j < menu.length; j++) {
-    //                     menu[j].classList.toggle('hidden');
-    //                 }
-    //             });
-    //         }
-    //     }
-
-    //     // close
-    //     const close = document.querySelectorAll('.navbar-close');
-    //     const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-    //     if (close.length) {
-    //         for (var i = 0; i < close.length; i++) {
-    //             close[i].addEventListener('click', function() {
-    //                 for (var j = 0; j < menu.length; j++) {
-    //                     menu[j].classList.toggle('hidden');
-    //                 }
-    //             });
-    //         }
-    //     }
-
-    //     if (backdrop.length) {
-    //         for (var i = 0; i < backdrop.length; i++) {
-    //             backdrop[i].addEventListener('click', function() {
-    //                 for (var j = 0; j < menu.length; j++) {
-    //                     menu[j].classList.toggle('hidden');
-    //                 }
-    //             });
-    //         }
-    //     }
-    // });
-    // </script>
   );
 }
+
 export default Navbar;
