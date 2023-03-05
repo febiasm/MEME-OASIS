@@ -104,8 +104,9 @@ article {
 
 }
 .trending{
-  margin-left: 675px;
-  margin-bottom: 30px ;
+  margin-top: 1%;
+  margin-left: 29%;
+  margin-bottom: 1% ;
 }
 .popular{
   margin-top: 30px;
@@ -144,7 +145,7 @@ article {
 /* home pg top cards */
 
 .center {
-  margin-left: 35.5%;
+  margin-left: 29%;
 
 }
 
@@ -191,3 +192,35 @@ article {
   font-size: 17px;
   color: #fff;
 }
+
+/* side card  */
+.right-column{
+  margin-left: 400px;
+}
+
+.card {
+  margin: 20px;
+  width: 350px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 20px;
+
+}
+
+.card__header {
+  margin-bottom: 20px;
+}
+
+.card__header h1 {
+  margin: 0;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* meme dropdown  */
+
