@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import LikeButton from "./LikeButton";
 import MemesDropdown from "./MemesDropdown";
 import TrendingCard from "./TrendingCard";
+import AddMemes from "./AddMemes";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [memes, setMemes] = useState([]);
@@ -9,7 +11,7 @@ function Home() {
   const [searchType, setSearchType] = useState("title");
 
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/6400b884c0e7653a05814863/latest")
+    fetch("https://api.jsonbin.io/v3/b/640532a3ebd26539d089c2c2")
       .then((response) => response.json())
       .then((data) => setMemes(data.record.memes));
   }, []);
@@ -42,7 +44,7 @@ function Home() {
 
   return (
     <div className="Homepg">
-    <div className="trending">
+    <div className="trending text-white">
       <p> Trending today</p>
     </div>
 
@@ -51,10 +53,10 @@ function Home() {
           <div className="article-card">
             <div className="content">
               <p className="date">Jan 1, 2022</p>
-              <p className="title">Article Title Goes Here</p>
+              <p className="title">The Power of Memes: How a viral meme brought attention to a serious social issue</p>
             </div>
             <img
-              src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"
+              src="https://loremflickr.com/g/320/240/paris,girl/all"
               alt="article-cover"
             />
           </div>
@@ -65,10 +67,10 @@ function Home() {
             <div className="article-card">
               <div className="content">
                 <p className="date">Jan 1, 2022</p>
-                <p className="title">Article Title Goes Here</p>
+                <p className="title">Meme War: Online battles over the funniest memes heat up on social media</p>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"
+                src="https://loremflickr.com/g/320/240/paris"
                 alt="article-cover"
               />
             </div>
@@ -80,10 +82,10 @@ function Home() {
             <div className="article-card">
               <div className="content">
                 <p className="date">Jan 1, 2022</p>
-                <p className="title">Article Title Goes Here</p>
+                <p className="title">From Meme to Money: How internet memes are being turned into profitable merchandise</p>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"
+                src="https://picsum.photos/200"
                 alt="article-cover"
               />
             </div>
@@ -95,10 +97,10 @@ function Home() {
             <div className="article-card">
               <div className="content">
                 <p className="date">Jan 1, 2022</p>
-                <p className="title">Article Title Goes Here</p>
+                <p className="title">Meme Magic: Researchers discover how memes can influence public opinion and behavior</p>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1482877346909-048fb6477632?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80"
+                src="https://picsum.photos/200/300"
                 alt="article-cover"
               />
             </div>
@@ -110,6 +112,7 @@ function Home() {
 
       <div className="container">
         <div className="left-column">
+
           {/* left column content */}
           <div>
             {" "}
@@ -125,7 +128,9 @@ function Home() {
                       <img src="https://img.icons8.com/ios-filled/256/hashtag.png" alt ="pic"/>
                     </div>
                   </div>
+                  <Link to="/Explore">
                   <div class=" pt-2 pl-4 text-lower"> Explore </div>
+                  </Link>
                 </div>
               </button>
             </div>
@@ -141,7 +146,9 @@ function Home() {
                       <img src="https://img.icons8.com/sf-regular/256/settings.png" alt ="dd" />
                     </div>
                   </div>
-                  <div class=" pt-2 pl-4 text-lower"> settings </div>
+                  <Link to ="/Mymemes">
+                  <div class=" pt-2 pl-4 text-lower"> Mymemes </div>
+                  </Link>
                 </div>
               </button>
             </div>
@@ -149,64 +156,18 @@ function Home() {
         </div>
 
         <div className="center articles">
-          <div className="popular">
+          <div className="popular text-white ">
             <p> Popular posts</p>
           </div>
 
           <div className="flex items-center">
       {/* add search bar here */}
 
-      <div className="flex items-center">
-  <form onSubmit={handleSearch} className="relative">
-    <div className="flex items-center space-x-4">
-      <div className="relative">
-        <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-          <svg className="w-5 h-5 text-gray-500" viewBox="0 0 24 24" fill="none">
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-              d="M21 21L15.5 15.5M15.5 15.5C17.1569 14.0464 18 12.1113 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C12.1113 18 14.0464 17.1569 15.5 15.5Z"
-            />
-          </svg>
-        </span>
-        <input
-          type="text"
-          id="search-query"
-          value={searchQuery}
-          onChange={(event) => setSearchQuery(event.target.value)}
-          placeholder="Search MEME OASIS"
-          className="block w-full pl-10 pr-3 py-2 rounded-lg bg-gray-200 text-gray-900 placeholder-gray-500 focus:bg-white focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        />
-      </div>
-      <div className="flex items-center space-x-2">
-        <label htmlFor="search-type" className="hidden">Search by:</label>
-        <select
-          id="search-type"
-          value={searchType}
-          onChange={(event) => setSearchType(event.target.value)}
-          className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-900 py-2 px-3 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-        >
-          {searchTypes.map((type) => (
-            <option key={type.value} value={type.value}>
-              {type.label}
-            </option>
-          ))}
-        </select>
-      </div>
-      <button
-        type="submit"
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-      >
-        Search
-      </button>
-    </div>
-  </form>
-</div>
 
 
     </div>
+    {/* center column */}
+    <AddMemes/>
           {memes.map((meme) => (
             <div key={meme.id}>
               <section className="mt-3 articles">
@@ -215,7 +176,7 @@ function Home() {
                     <div className="article-body">
                       <div className="flex items-center">
                         <img
-                          className="icon w-24 h-34 object-cover "
+                          className="w-14 h-14 rounded-full mr-2 "
                           src={meme.image_url}
                           alt={meme.title}
                         />
@@ -300,6 +261,55 @@ function Home() {
           ))}
         </div>
         <div className="right-column">{/* right column content */}
+        <div className="mt-6 flex items-center">
+  <form onSubmit={handleSearch} className="relative">
+    <div className="flex items-center space-x-4">
+      <div className="relative">
+        <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+          <svg className="w-5 h-5 text-gray-500" viewBox="0 0 24 24" fill="none">
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              d="M21 21L15.5 15.5M15.5 15.5C17.1569 14.0464 18 12.1113 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C12.1113 18 14.0464 17.1569 15.5 15.5Z"
+            />
+          </svg>
+        </span>
+        <input
+          type="text"
+          id="search-query"
+          value={searchQuery}
+          onChange={(event) => setSearchQuery(event.target.value)}
+          placeholder="Search MEME OASIS"
+          className="block w-full pl-10 pr-3 py-2 rounded-lg bg-gray-200 text-gray-900 placeholder-gray-500 focus:bg-white focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        />
+      </div>
+      <div className="flex items-center space-x-2">
+        <label htmlFor="search-type" className="hidden"><b>Search by</b>:</label>
+        <select
+          id="search-type"
+          value={searchType}
+          onChange={(event) => setSearchType(event.target.value)}
+          className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-900 py-2 px-3 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        >
+          {searchTypes.map((type) => (
+            <option key={type.value} value={type.value}>
+              {type.label}
+            </option>
+          ))}
+        </select>
+      </div>
+      <button
+        type="submit"
+        className="bg-white hover:bg-grey-600 text-black font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+</div>
+
         <TrendingCard/>
         <MemesDropdown/>
 

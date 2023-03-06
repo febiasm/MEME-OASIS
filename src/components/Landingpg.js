@@ -11,7 +11,7 @@ function Landingpg (){
 
     <Link
           class="bg-white text-black py-6 px-8 text-xl"
-          to="/home"
+          to="/signup"
         >
           GET STARTED
         </Link>
