@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <nav className="relative px-4 py-4 flex justify-between items-center">
-      <Link className="text-3xl font-bold leading-none" to="/">
+      <div className="text-3xl font-bold leading-none" >
         <div className="flex items-center">
           <img
             className="w-24 h-34 object-cover"
@@ -23,7 +23,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </Link>
+      </div>
       <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
         <li>
           <Link
@@ -35,17 +35,17 @@ function Navbar() {
         </li>
         <li className="text-gray-300"></li>
         <li>
-          <Link
+          <a
             className="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold transition duration-200 hover:text-black text-2xl"
-            to="#"
+            href="https://vercel.com/dashboard"
           >
             PRODUCTS
-          </Link>
+          </a>
         </li>
         <li>
           <Link
             className="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold transition duration-200 hover:text-black text-2xl"
-            to="#"
+            to="/Help"
           >
             HELP
           </Link>
@@ -70,7 +70,7 @@ function Navbar() {
       ) : (
         <Link
           className="hidden lg:inline-block lg:ml-auto lg:mr-6 py-4 px-7 text-white font-bold transition duration-200 hover:bg-white hover:text-black text-2xl"
-          to="/"
+          to="/LogoutLoad"
         >
           LOG OUT
         </Link>

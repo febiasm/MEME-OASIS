@@ -9,6 +9,9 @@ import Home from "./Home";
 import LoginPage from "./LoginPage";
 import Mymemes from "./Mymemes";
 import Explore from "./Explore";
+import Loading from "./Loading";
+import LogoutLoad from "./LogoutLoad";
+import Help from "./Help";
 
 function App() {
   return (
@@ -21,9 +24,12 @@ function App() {
           <Route path="/contact" element={<AboutMePage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/LoginPage" element={<LoginPage />} />
-
+          <Route path="/Loading" element={<Loading />} />
+          <Route path="/Loading" element={<Loading />} />
           <Route path="/Mymemes" element={<Mymemes />} />
+          <Route path="/LogoutLoad" element={<LogoutLoad />} />
           <Route path="/Explore" element={<Explore />} />
+          <Route path="/Help" element={<Help />} />
         </Routes>
       </div>
     </Router>
