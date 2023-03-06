@@ -194,33 +194,40 @@ function Home() {
                         </div>
                       </div>
                       <p>{meme.caption}</p>
-                      <div className="flex items-center">
-                        <p className="tags text-sm ml-4 hover:text-black ">
+
+
+                      <div className="flex items-center ">
+                      <div class="wrapper">
+
+
+                        <p className="rounded-full text-sm bg-gray-100  p-2 transition-colors duration-300 hover:bg-gray-200">
                           {" "}
+
                           {meme.tags[0]}
                         </p>
-                        <div class="wrapper">
-                          <p class="tags text-sm ml-4 hover:text-black ">
-                            {" "}
-                            {meme.tags[1]}
-                          </p>
                         </div>
                         <div class="wrapper">
-                          <p class="tags text-sm ml-4 hover:text-black ">
+                        <p className="rounded-full ml-6 text-sm bg-gray-100 p-2 transition-colors duration-300 hover:bg-gray-200">
+  {meme.tags[1]}
+</p>
+
+                        </div>
+                        <div class="wrapper">
+                          <p class="rounded-full ml-11 text-sm bg-gray-100  p-2 transition-colors duration-300 hover:bg-gray-200 ">
                             {" "}
                             {meme.tags[2]}
                           </p>
                         </div>
                         <div class="wrapper">
-                          <p class="tags text-sm ml-4 hover:text-black ">
+                          <p class="rounded-full text-sm ml-11    p-2 transition-colors duration-300 hover:bg-gray-200  ">
                             {" "}
-                            {meme.tags[3]}
+
                           </p>
                         </div>
                         <div class="wrapper">
-                          <p class="tags text-sm ml-4 hover:text-black ">
+                          <p class="rounded-full ml-14  text-sm p-2 transition-colors duration-300 hover:bg-gray-300  ">
                             {" "}
-                            {meme.tags[4]}
+                         
                           </p>
                         </div>
                       </div>
