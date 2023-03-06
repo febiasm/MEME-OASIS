@@ -11,7 +11,7 @@ function Home() {
   const [searchType, setSearchType] = useState("title");
 
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/640532a3ebd26539d089c2c2")
+    fetch("https://api.jsonbin.io/v3/b/6405cbc8c0e7653a058343a5")
       .then((response) => response.json())
       .then((data) => setMemes(data.record.memes));
   }, []);
