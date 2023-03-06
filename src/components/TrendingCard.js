@@ -49,7 +49,7 @@ function TrendingCard() {
     },
     {
       title: 'Trending in Kenya',
-      topic: 'Gachagua',
+      topic: 'Gachagua () riggyG',
       interactions: '3,832 views',
     },
   ];
