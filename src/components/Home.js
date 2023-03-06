@@ -52,7 +52,7 @@ function Home() {
         <div className="center">
           <div className="article-card">
             <div className="content">
-              <p className="date">Jan 1, 2022</p>
+              <p className="date">Jan 1, 2023</p>
               <p className="title">The Power of Memes: How a viral meme brought attention to a serious social issue</p>
             </div>
             <img
@@ -66,7 +66,7 @@ function Home() {
             {" "}
             <div className="article-card">
               <div className="content">
-                <p className="date">Jan 1, 2022</p>
+                <p className="date">Jan 1, 2023</p>
                 <p className="title">Meme War: Online battles over the funniest memes heat up on social media</p>
               </div>
               <img
@@ -81,7 +81,7 @@ function Home() {
             {" "}
             <div className="article-card">
               <div className="content">
-                <p className="date">Jan 1, 2022</p>
+                <p className="date">Jan 1, 2023</p>
                 <p className="title">From Meme to Money: How internet memes are being turned into profitable merchandise</p>
               </div>
               <img
@@ -96,7 +96,7 @@ function Home() {
             {" "}
             <div className="article-card">
               <div className="content">
-                <p className="date">Jan 1, 2022</p>
+                <p className="date">Jan 1, 2023</p>
                 <p className="title">Meme Magic: Researchers discover how memes can influence public opinion and behavior</p>
               </div>
               <img

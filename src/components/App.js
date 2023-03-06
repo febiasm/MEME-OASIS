@@ -8,7 +8,7 @@ import Landingpg from "./Landingpg";
 import SignUpPage from "./SignUpPage"
 import Home from "./Home";
 import LoginPage from "./LoginPage";
-import Account from "./Account";
+
 import Mymemes from "./Mymemes";
 import Explore from "./Explore";
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/contact" element={<AboutMePage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/LoginPage" element={<LoginPage />} />
-          <Route path="/Account" element={<Account />} />
+         
           <Route path="/Mymemes" element={<Mymemes />} />
           <Route path="/Explore" element={<Explore />} />
         </Routes>
