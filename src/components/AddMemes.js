@@ -52,7 +52,7 @@ function AddMemes() {
             </label>
             <input
               type="url"
-              placeholder="Search by"
+              placeholder="Meme url"
               id="url"
               value={url}
               onChange={(event) => setUrl(event.target.value)}
