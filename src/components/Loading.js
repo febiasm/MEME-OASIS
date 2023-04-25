@@ -13,22 +13,15 @@ function Loading() {
   }, [navigate]);
 
   return (
-    <body>
-		<div class="loader">
-			<span>V</span>
-			<span>A</span>
-			<span>L</span>
-			<span>I</span>
-			<span>D</span>
-			<span>A</span>
-			<span>T</span>
-            <span>N</span>
-			<span>G</span>
-			 
-
-
-		</div>
-	</body>
+    <main>
+    <div class="preloader">
+      <div class="preloader__square"></div>
+      <div class="preloader__square"></div>
+      <div class="preloader__square"></div>
+      <div class="preloader__square"></div>
+    </div>
+    <div class="status">Loging out<span class="status__dot">.</span><span class="status__dot">.</span><span class="status__dot">.</span></div>
+  </main>
   );
 }
 
