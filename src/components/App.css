@@ -1,7 +1,7 @@
 
 
 .leftColumn{
-    margin-top: 150px;
+    margin-top: 10vh;
     margin-left: 80px;
 }
 .elonPng{
@@ -40,7 +40,7 @@ article {
 
   body {
 
-	
+
     font-family: "Figtree", sans-serif;
     font-size: 1.2rem;
 

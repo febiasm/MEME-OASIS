@@ -6,7 +6,7 @@ function Navbar() {
   const isHome = location.pathname === "/" || location.pathname === "/LoginPage" || location.pathname === "/signup";
 
   return (
-    <nav className="relative px-4 py-4 flex justify-between items-center">
+    <nav className="bg-gray-700 relative px-4 py-4 flex justify-between items-center">
       <div className="text-3xl font-bold leading-none" >
         <div className="flex items-center">
           <img
