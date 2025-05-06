@@ -8,7 +8,7 @@ function LogoutLoad() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/');
-    }, 5000);
+    }, 5);
 
     return () => clearTimeout(timer);
   }, [navigate]);

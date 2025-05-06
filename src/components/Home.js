@@ -43,13 +43,13 @@ function Home() {
   };
 
   return (
-    <div className="Homepg">
-    <div className="trending text-white">
+    <div className=" Homepg">
+    <div className="ml-10 text-black">
       <p> Trending today</p>
     </div>
 
       <div className="flex items-center">
-        <div className="center">
+        <div className="ml-10">
           <div className="article-card">
             <div className="content">
               <p className="date">Jan 1, 2023</p>
@@ -116,7 +116,7 @@ function Home() {
           {/* left column content */}
           <div>
             {" "}
-            <div class="explore mb-4">
+            <div class="explore ml-10 mt-5 mb-4">
               <button
                 type="button"
                 class="flex h-11  w-full bg-white   hover:bg-gray-200 focus:outline-none text-black text-xl   font-bold shadow-md rounded-full mx-auto   transition-colors duration-300"
@@ -124,7 +124,7 @@ function Home() {
                 <div class="flex sm:flex-cols-12 gap-2">
                   <div class="col-span-1"></div>
                   <div class="wrapper">
-                    <div class="w-8 pb-12">
+                    <div class="w-8 pb-4">
                       <img src="https://img.icons8.com/ios-filled/256/hashtag.png" alt ="pic"/>
                     </div>
                   </div>
@@ -134,15 +134,15 @@ function Home() {
                 </div>
               </button>
             </div>
-            <div class="explore mb-4">
+            <div class="explore ml-9 mb-4">
               <button
                 type="button"
                 class="flex h-11  w-full bg-white   hover:bg-gray-200 focus:outline-none text-black text-xl   font-bold shadow-md rounded-full mx-auto   transition-colors duration-300"
               >
-                <div class="flex sm:flex-cols-12 gap-2">
-                  <div class="col-span-1"></div>
+                <div class=" flex sm:flex-cols-12 gap-2">
+
                   <div class="wrapper">
-                    <div class="w-8 pb-12">
+                    <div class="w-8 pb-4">
                       <img src="https://img.icons8.com/sf-regular/256/settings.png" alt ="dd" />
                     </div>
                   </div>
@@ -161,13 +161,14 @@ function Home() {
           </div>
 
           <div className="flex items-center">
-      {/* add search bar here */}
+      {/* search bar here */}
 
 
 
     </div>
     {/* center column */}
     <AddMemes/>
+    <div className=" top-20 right-0 w-[80vh] h-[180vh] overflow-y-auto p-4 bg-white shadow-lg z-50">
           {memes.map((meme) => (
             <div key={meme.id}>
               <section className="mt-3 articles">
@@ -176,7 +177,7 @@ function Home() {
                     <div className="article-body">
                       <div className="flex items-center">
                         <img
-                          className="w-14 h-14 rounded-full mr-2 "
+                          className="w-12 h-12 rounded-full mr-2 "
                           src={meme.image_url}
                           alt={meme.title}
                         />
@@ -189,7 +190,7 @@ function Home() {
                         <div class="article-wrapper">
                           <div class="text-xs ml-20 text-gray-500 ">
                             {" "}
-                            <b className="text-sm  ml-2 text-gray-600">title:::</b> {meme.title}{" "}
+                            <b className="text-sm  ml-2 text-gray-600">Title:::</b> {meme.title}{" "}
                           </div>
                         </div>
                       </div>
@@ -265,7 +266,7 @@ function Home() {
                 </article>
               </section>
             </div>
-          ))}
+          ))}</div>
         </div>
         <div className="right-column">{/* right column content */}
         <div className="mt-6 flex items-center">

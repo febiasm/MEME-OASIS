@@ -24,10 +24,11 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+
+      <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center ">
         <li>
           <Link
-            className="hidden lg:inline-block lg:ml-auto lg:mr-1 py-4 px-7 text-white font-bold transition duration-200 hover:text-black text-2xl"
+            className="hidden lg:inline-block lg:ml-auto  py-4 px-7 text-white font-bold transition duration-200 hover:text-black text-2xl"
             to="/contact"
           >
             CONTACT
